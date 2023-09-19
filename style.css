@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-color: rgba(100, 148, 237, 0.1);
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(6, 1fr);
+}
+
+header {
+  background-color: white;
+  grid-column-start: 2;
+  grid-column-end: 7;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+  background-color: cornflowerblue;
+  grid-row-start: 1;
+  grid-row-end: 7;
+  padding: 25px;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-title {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-title .material-icons {
+  font-size: 2rem;
+  transition: 1s;
+}
+.nav-title .material-icons:hover {
+  transform: rotate(90deg);
+}
+.nav {
+  list-style: none;
+  margin: 1rem;
+}
+
+.nav-item {
+  padding: 1rem;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-link .material-icons {
+  font-size: 2rem;
+}
+
+header {
+  display: grid;
+}
+
+.top-part {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr max-content;
+}
+
+.account {
+  display: flex;
+}
+
+.search-bar {
+  display: flex;
+}
+
+#search {
+  width: 80%;
+  border-radius: 15px;
+  background-color: rgba(100, 148, 237, 0.1);
+}
